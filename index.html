@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>議事規則會場</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>議事規則會場</h1>
+  </header>
+
+  <section id="agenda-section">
+    <h2>會議議程</h2>
+    <input type="text" id="agenda-input" placeholder="輸入議程項目">
+    <button id="add-agenda">加入議程</button>
+    <ul id="agenda-list"></ul>
+  </section>
+
+  <section id="speakers-section">
+    <h2>發言名單</h2>
+    <input type="text" id="speaker-input" placeholder="輸入發言人姓名">
+    <button id="add-speaker">加入發言名單</button>
+    <ul id="speaker-list"></ul>
+    <button id="next-speaker">下一位發言人</button>
+  </section>
+
+  <section id="current-section">
+    <h2>目前發言</h2>
+    <div id="current-speaker">尚未開始</div>
+    <div>
+      <span id="timer">00:00</span>
+      <button id="start-timer">開始</button>
+      <button id="stop-timer">停止</button>
+      <button id="reset-timer">重設</button>
+    </div>
+  </section>
+
+  <section id="rules-section">
+    <h2>會議規則</h2>
+    <ul>
+      <li>發言時間每人限制為一分鐘。</li>
+      <li>請依序發言。</li>
+      <li>發言時請遵守會議禮儀。</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
